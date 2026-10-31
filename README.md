@@ -67,17 +67,6 @@ Socket programming finds applications in various domains, including web developm
 **Server:**
 
 ```python
-"""
-Advanced multi-client TCP chat server (Socket Programming - Ex.No 1a)
-
-Features
-  * Handles many clients at the same time (one thread per client)
-  * Unique usernames, join / leave notifications
-  * Broadcast chat, private messages (/msg), user list (/list)
-  * Timestamps on every message and a chat log file (chat_log.txt)
-  * Server console: broadcast as [SERVER], /users, /kick <name>, /quit
-  * Command-line options for host and port, clean shutdown with Ctrl+C
-"""
 import argparse
 import socket
 import threading
@@ -249,14 +238,6 @@ if __name__ == "__main__":
 **Client:**
 
 ```python
-"""
-Advanced chat client (Socket Programming - Ex.No 1a)
-
-Sends and receives at the same time (separate receiver thread), so messages
-from other users appear instantly while you are typing.
-
-Usage:  python client.py [--host localhost] [--port 8000]
-"""
 import argparse
 import socket
 import threading
